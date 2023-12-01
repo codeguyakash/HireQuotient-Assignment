@@ -1,0 +1,31 @@
+.cards-container {
+  max-width: 100%;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px; */
+}
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0px 0px 10px 2px rgba(190, 190, 190, 0.188);
+  padding: 10px;
+}
+.card-content-div > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+#card-heading {
+  display: inline;
+}
+.card-heading-div > div {
+  display: flex;
+  align-items: center;
+}
