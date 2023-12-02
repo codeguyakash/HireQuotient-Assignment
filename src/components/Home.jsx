@@ -13,11 +13,14 @@ const Home = () => {
     const [data, setData] = useState([])
     const [customers, setCustomers] = useState([])
 
+    const REACT_APP_CUSTOMERS = "https://www.notion.so/_next/data/k4zbIKoALoyJo2u6dG2lp/en-us/customers.json"
+    const REACT_APP_USERS = "https://reqres.in/api/users/"
+
     useEffect(() => {
         async function fetchData() {
             try {
-                const CUSTOMERS_API = process.env.REACT_APP_CUSTOMERS;
-                const USERS_API = process.env.REACT_APP_USERS;
+                const CUSTOMERS_API = REACT_APP_CUSTOMERS;
+                const USERS_API = REACT_APP_USERS;
 
                 const customerResponse = await fetch(CUSTOMERS_API);
                 const userResponse = await fetch(USERS_API);
