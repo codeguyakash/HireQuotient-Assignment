@@ -65,7 +65,6 @@ body {
 }
 .partners-container {
   padding: 2rem 25rem;
-  margin-bottom: 50rem;
 }
 .client-content {
   display: flex;
@@ -95,6 +94,7 @@ body {
   text-align: center;
   padding: 1rem;
   position: relative;
+  overflow: hidden;
 }
 #line {
   display: block;
@@ -122,6 +122,90 @@ body {
   position: absolute;
   mix-blend-mode: darken;
 }
+.powerful {
+  width: 70rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f6f5f4;
+  border-radius: 10px;
+  position: relative;
+}
+.powerful > .blueicon {
+  width: 30px;
+  background-color: transparent;
+  display: block;
+  margin: 0;
+}
+#let-see {
+  width: 210px;
+  position: absolute;
+  top: -132px;
+  border: none;
+  background-color: transparent;
+}
+.powerful-heading {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.powerful > h3 {
+  margin: 1rem 0 0.5rem 0;
+}
+.powerful > p {
+  margin: 0 0 1rem 0;
+}
+.powerful > img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px rgba(190, 190, 190, 0.188);
+}
+.powerful-btn-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.powerful-btn-div > button {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 4px 8px;
+  margin: 0.6rem;
+  border: 2px solid rgb(226, 226, 226);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.powerful-btn-div > button:hover {
+  background-color: rgb(213, 213, 213);
+}
+
+.PowerFullCards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+.PCard {
+  overflow: hidden;
+  background-color: #f6f5f4;
+  border-radius: 10px;
+  margin: 2rem 1rem;
+  width: 540px;
+  height: 572px;
+  padding: 2rem;
+}
+.PCard > h3,p{
+line-height: 1.5;
+}
+.blueicon {
+  width: 35px;
+}
+.PCardImage {
+  /* position: absolute; */
+  width: 107%;
+  height: 85%;
+}
+/* -------------------------------------------------tablet------------------------------------------- */
 @media screen and (min-width: 601px) and (max-width: 1023px) {
   #hero-image {
     width: 80%;
@@ -138,7 +222,6 @@ body {
   }
   .partners-container {
     padding: 1rem;
-    margin-bottom: 50rem;
   }
   .client-paragraph > p {
     margin: 1rem;
@@ -178,11 +261,42 @@ body {
     mix-blend-mode: darken;
     width: 60%;
   }
+  .powerful {
+    width: 100%;
+  }
+
+  .powerful-heading {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .powerful > img {
+    width: 100%;
+  }
+  .powerful-btn-div > button {
+    font-size: 0.5rem;
+    margin: 0.3rem;
+  }
+  .PCard {
+    margin: 1rem;
+    width: 100%;
+  }
+  .PCardImage {
+    /* position: absolute; */
+    width: 108%;
+    height: 80%;
+  }
 }
+
+/* -------------------------------------------------Mobile------------------------------------------- */
 @media only screen and (max-width: 600px) {
   #hero-image {
     width: 100%;
     margin: 10px auto;
+  }
+  .hero-container > h1 {
+    font-size: 3rem;
+    text-align: center;
   }
   .image {
     width: 100%;
@@ -192,7 +306,6 @@ body {
   }
   .partners-container {
     padding: 1rem;
-    margin-bottom: 50rem;
   }
   .client-heading > h2 {
     font-size: 1.5rem;
@@ -241,5 +354,46 @@ body {
     position: absolute;
     mix-blend-mode: darken;
     width: 90%;
+  }
+  .powerful {
+    width: 100%;
+    padding: 1rem;
+  }
+  #let-see {
+    width: 150px;
+    top: -92px;
+  }
+  .powerful-heading {
+    font-size: 1.5rem;
+    margin-bottom: 6rem;
+  }
+  .powerful > h3 {
+    font-size: 0.9rem;
+  }
+  .powerful > p {
+    font-size: 0.6rem;
+  }
+  .powerful > img {
+    width: 100%;
+  }
+  .powerful-btn-div > button {
+    font-size: 0.5rem;
+    margin: 0.3rem;
+  }
+
+  .PowerFullCards {
+    display: flex;
+    flex-direction: column;
+   }
+   .PCard {
+    margin: 1rem;
+    width: 100%;
+    height: 480px;
+    padding: 1rem;
+  }
+  .PCardImage {
+    /* position: absolute; */
+    width: 105%;
+    height: 80%;
   }
 }
