@@ -21,7 +21,7 @@ body {
 }
 .hero-container > p {
   margin-top: 20px;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-align: center;
   font-weight: 600;
 }
@@ -52,34 +52,75 @@ body {
   box-shadow: 0px 0px 10px 2px rgba(190, 190, 190, 0.188);
 }
 .client-logos {
-  margin: 0px 8rem;
+  margin: 2rem auto;
   max-width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   justify-items: center;
-  column-gap: 20px;
-  row-gap: 10px;
+  align-items: center;
+  gap: 2rem;
 }
 .clients > img {
-  border: 2px solid red;
-  width: 200px;
+  width: 100px;
 }
-.partners-container{
-  margin: 0 10rem 10rem;
-  border: 2px solid red;
+.partners-container {
+  padding: 2rem 25rem;
+  margin-bottom: 50rem;
 }
-.client-content{
+.client-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.client-heading>h2{
-  font-size: 45px;
+.client-heading > h2 {
+  font-size: 2.7rem;
+  text-align: center;
+  margin-top: 1rem;
 }
-.client-paragraph>p{
-  margin-top: 10px;
-  font-size: 16px;
+.client-paragraph > p {
+  margin: 1rem 7rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+#readmore {
+  text-decoration: none;
+  color: #0a85da;
+  font-weight: 600;
+  font-size: 14px;
+}
+.m-client {
+  margin-top: 5rem;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+#line {
+  display: block;
+  margin: 2rem auto;
+}
+#pencil-man {
+  position: absolute;
+  top: 15%;
+  right: 0;
+  width: 150px;
+}
+#pencil-man2 {
+  display: none;
+}
+.m-client > h2 {
+  font-size: 2.7rem;
+  text-align: center;
+}
+#c-logo {
+  margin: 0 auto;
+  top: 56%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  mix-blend-mode: darken;
 }
 @media screen and (min-width: 601px) and (max-width: 1023px) {
   #hero-image {
@@ -89,6 +130,53 @@ body {
   }
   .carouser-div {
     width: 81%;
+  }
+  .client-logos {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-items: center;
+    gap: 1rem;
+  }
+  .partners-container {
+    padding: 1rem;
+    margin-bottom: 50rem;
+  }
+  .client-paragraph > p {
+    margin: 1rem;
+  }
+  .m-client {
+    margin-top: 5rem;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+  }
+  #line {
+    display: block;
+    margin: 2rem auto;
+    width: 80%;
+  }
+  #pencil-man {
+    display: none;
+  }
+  #pencil-man2 {
+    position: absolute;
+    top: 51%;
+    left: 90%;
+    width: 100px;
+    display: block;
+  }
+  .m-client > h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #c-logo {
+    margin: 0 auto;
+    top: 56%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    mix-blend-mode: darken;
+    width: 60%;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -101,5 +189,57 @@ body {
   }
   .carouser-div {
     width: 100%;
+  }
+  .partners-container {
+    padding: 1rem;
+    margin-bottom: 50rem;
+  }
+  .client-heading > h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .client-logos {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-items: center;
+    gap: 1rem;
+  }
+  .client-paragraph > p {
+    margin: 1rem;
+  }
+  .m-client {
+    margin-top: 5rem;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+  }
+  #line {
+    display: block;
+    margin: 2rem auto;
+    width: 100%;
+  }
+  #pencil-man {
+    display: none;
+  }
+  #pencil-man2 {
+    position: absolute;
+    top: 51%;
+    left: 90%;
+    width: 100px;
+    display: block;
+  }
+  .m-client > h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #c-logo {
+    margin: 0 auto;
+    top: 56%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    mix-blend-mode: darken;
+    width: 90%;
   }
 }

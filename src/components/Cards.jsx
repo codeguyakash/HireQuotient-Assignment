@@ -3,12 +3,13 @@ import Card from './Card';
 import './Cards.css'
 
 const Cards = ({ items }) => {
+  const slicedDate = items.slice(1,5)
 
   return (
     <>
       <div className="cards-container">
         {
-          items.map((item) =>
+          slicedDate.map((item) =>
             <Card key={item.id} items={item} />
           )
         }

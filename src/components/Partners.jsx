@@ -13,7 +13,7 @@ const Partners = ({ items }) => {
                     <div className="client-paragraph">
                         <p>Powering the world’s best teams, from next-generation startups to established enterprises.</p>
                     </div>
-                    <div><a href="#">Read costomer stories</a></div>
+                    <div id='readmore'><a href="#" id='readmore'>Read costomer stories ➡</a></div>
                     <div className="client-logos">
                         {
                             items.map(logo =>
@@ -21,6 +21,16 @@ const Partners = ({ items }) => {
                             )
                         }
                     </div>
+                </div>
+                <div className='m-client'>
+                    <h2>Consolidate tools. <br /> Cut costs.</h2>
+                    <img src="https://www.notion.so/cdn-cgi/image/format=webp,width=256/front-static/pages/home/giant-pencil-illustration.png" alt="pencil-man" id='pencil-man' />
+
+                    <img src="https://www.notion.so/cdn-cgi/image/format=webp,width=128/front-static/pages/home/pencil-peek-illustration-V2.png" alt="pencil-man" id='pencil-man2' />
+
+                    <img src="https://www.notion.so/cdn-cgi/image/format=webp,width=640/front-static/pages/home/tools-strikethrough-V2.png" alt="line" id='line' />
+
+                    <img src="https://www.notion.so/cdn-cgi/image/format=webp,width=640/front-static/pages/home/tools-before-notion-V2.png" alt="c-logo" id='c-logo' />
                 </div>
             </div>
         </>
