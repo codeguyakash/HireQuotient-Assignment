@@ -12,16 +12,19 @@ import Tools from './Tools';
 import JoinGlobal from './JoinGlobal';
 import GetStart from './GetStart';
 import Footer from './Footer';
+import axios from "axios"
+
 
 const Home = () => {
     const Images = ImagesData;
     const [data, setData] = useState([])
     const [customers, setCustomers] = useState([])
 
+
     useEffect(() => {
         async function fetchData() {
             try {
-                const CUSTOMERS_API = "https://www.notion.so/_next/data/k4zbIKoALoyJo2u6dG2lp/en-us/customers.json";
+                const CUSTOMERS_API = "https://codeguyakash.github.io/server/customers.json";
                 const USERS_API = "https://reqres.in/api/users/";
 
                 const customerResponse = await fetch(CUSTOMERS_API, { mode: 'cors' });
@@ -31,13 +34,20 @@ const Home = () => {
                 const userData = await userResponse.json();
 
                 setData(userData.data);
-                setCustomers(customersData.pageProps.logoGroup.logos);
+                // setCustomers(customersData.pageProps.logoGroup.logos);
+                console.log(customerResponse)
+
+
+                axios.get("https://codeguyakash.github.io/server/customers.json").then(res => setCustomers(res.data))
+
+
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
         }
         fetchData();
     }, []);
+    // console.log(customers)
     return (
         <>
             <Navbar />
@@ -97,7 +107,7 @@ const Home = () => {
                 </Carousel>
             </div>
             <JoinGlobal />
-            <GetStart/>
+            <GetStart />
             {/* <Footer/> */}
 
         </>
