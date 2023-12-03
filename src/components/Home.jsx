@@ -8,6 +8,9 @@ import { Carousel } from 'react-responsive-carousel';
 import Partners from './Partners';
 import PowerFullCard from './PowerFullCard';
 import crossarrow from "../utils/icons/shuffle-arrows.png"
+import Tools from './Tools';
+import JoinGlobal from './JoinGlobal';
+import GetStart from './GetStart';
 
 const Home = () => {
     const Images = ImagesData;
@@ -74,6 +77,26 @@ const Home = () => {
                 </div>
             </div>
             <PowerFullCard />
+            <Tools />
+            <div className='carouser-div'>
+                <Carousel className='ccc' autoPlay={true}
+                    centerMode={true}
+                    infiniteLoop={true}
+                    showThumbs={false}
+                    showStatus={false}
+                    stopOnHover={false}
+                    dynamicHeight={false}
+                    interval={2500}
+                >
+                    {
+                        Images.map((img) =>
+                            <Image key={img.id} items={img} />
+                        )
+                    }
+                </Carousel>
+            </div>
+            <JoinGlobal />
+            <GetStart/>
 
         </>
     )

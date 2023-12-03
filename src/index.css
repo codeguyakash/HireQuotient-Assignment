@@ -16,7 +16,7 @@ body {
   margin: 20px 0;
 }
 .hero-container > h1 {
-  font-size: 61px;
+  font-size: 3.8rem;
   text-align: center;
 }
 .hero-container > p {
@@ -89,6 +89,7 @@ body {
   font-weight: 600;
   font-size: 14px;
 }
+
 .m-client {
   margin-top: 5rem;
   text-align: center;
@@ -110,7 +111,7 @@ body {
   display: none;
 }
 .m-client > h2 {
-  font-size: 2.7rem;
+  font-size: 2.8rem;
   text-align: center;
 }
 #c-logo {
@@ -184,7 +185,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
- }
+}
 .PCard {
   overflow: hidden;
   background-color: #f6f5f4;
@@ -194,8 +195,9 @@ body {
   height: 572px;
   padding: 2rem;
 }
-.PCard > h3,p{
-line-height: 1.5;
+.PCard > h3,
+p {
+  line-height: 1.5;
 }
 .blueicon {
   width: 35px;
@@ -204,6 +206,89 @@ line-height: 1.5;
   /* position: absolute; */
   width: 107%;
   height: 85%;
+}
+#tagline-div {
+  margin-bottom: 5rem;
+}
+#powerfull-tagline {
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-weight: 200;
+}
+#rahim {
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+}
+.tool-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.tools {
+  border: 1px solid;
+  width: 160px;
+  padding: 0.6rem 0.8rem;
+  border: 2px solid rgb(226, 226, 226);
+  border-radius: 1rem;
+  background-color: rgba(213, 213, 213, 0.691);
+}
+.tools:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.tools > img {
+  display: block;
+  margin: 0 auto;
+  width: 90px;
+}
+.tool-heading {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#learnmore {
+  text-decoration: none;
+  text-align: center;
+  color: #0a85da;
+  font-weight: 600;
+  font-size: 14px;
+}
+.requestdemo{
+  margin-top: 1rem;
+}
+#requestdemo{
+  text-decoration: none;
+  text-align: center;
+  color: #0a85da;
+  font-weight: 600;
+  font-size: 14px;
+}
+.member-image > img {
+  display: block;
+  margin: 0 auto;
+}
+.community {
+  border: 1px solid;
+  width: 360px;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #f6f5f4;
+}
+.community > span {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #0a85da;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 /* -------------------------------------------------tablet------------------------------------------- */
 @media screen and (min-width: 601px) and (max-width: 1023px) {
@@ -286,10 +371,16 @@ line-height: 1.5;
     width: 108%;
     height: 80%;
   }
+  .member-image > img {
+    width: 100%;
+  }
 }
 
 /* -------------------------------------------------Mobile------------------------------------------- */
 @media only screen and (max-width: 600px) {
+  .flex {
+    flex-direction: column;
+  }
   #hero-image {
     width: 100%;
     margin: 10px auto;
@@ -342,7 +433,7 @@ line-height: 1.5;
     display: block;
   }
   .m-client > h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
   }
   #c-logo {
@@ -384,8 +475,8 @@ line-height: 1.5;
   .PowerFullCards {
     display: flex;
     flex-direction: column;
-   }
-   .PCard {
+  }
+  .PCard {
     margin: 1rem;
     width: 100%;
     height: 480px;
@@ -395,5 +486,25 @@ line-height: 1.5;
     /* position: absolute; */
     width: 105%;
     height: 80%;
+  }
+  #tagline-div {
+    margin-bottom: 3rem;
+  }
+  #powerfull-tagline {
+    font-size: 1rem;
+  }
+  #rahim {
+    width: 200px;
+  }
+  .tool-container {
+    display: none;
+  }
+  .tool-heading {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .member-image > img {
+    width: 100%;
   }
 }

@@ -13,7 +13,7 @@ const Partners = ({ items }) => {
                     <div className="client-paragraph">
                         <p>Powering the world’s best teams, from next-generation startups to established enterprises.</p>
                     </div>
-                    <div id='readmore'><a href="#" id='readmore'>Read costomer stories ➡</a></div>
+                    <div id='readmore'><a href="#" id='readmore'>Read costomer stories →</a></div>
                     <div className="client-logos">
                         {
                             items.map(logo =>
