@@ -290,6 +290,24 @@ p {
   align-items: center;
   gap: 30px;
 }
+.footer-items > .items ul{
+  flex-direction: column;
+  text-align: start;
+  line-height: 1.5;
+}
+.icons > img{
+  width: 30px;
+
+}
+#play{
+  margin-bottom: 1rem;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+} 
 /* -------------------------------------------------tablet------------------------------------------- */
 @media screen and (min-width: 601px) and (max-width: 1023px) {
   #hero-image {

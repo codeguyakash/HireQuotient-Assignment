@@ -5,7 +5,7 @@ const GetStart = () => {
         <>
             <div className="hero-container">
                 <h1>Get started for free</h1>
-                <p>Play around with it first. Pay and add your team later.</p>
+                <p id='play'>Play around with it first. Pay and add your team later.</p>
                 <div className='requstdemo flex'>
                     <div>
                         <button id='getnotion'>Try Notion free</button>

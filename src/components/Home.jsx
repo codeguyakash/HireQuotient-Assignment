@@ -11,6 +11,7 @@ import crossarrow from "../utils/icons/shuffle-arrows.png"
 import Tools from './Tools';
 import JoinGlobal from './JoinGlobal';
 import GetStart from './GetStart';
+import Footer from './Footer';
 
 const Home = () => {
     const Images = ImagesData;
@@ -97,6 +98,7 @@ const Home = () => {
             </div>
             <JoinGlobal />
             <GetStart/>
+            {/* <Footer/> */}
 
         </>
     )
